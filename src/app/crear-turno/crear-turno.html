@@ -1,0 +1,11 @@
+<h2>Cargar Turno</h2>
+
+<form (ngSubmit)="crearTurno()">
+  <label>ID Usuario:</label>
+  <input type="number" [(ngModel)]="turno.idUsuario" name="idUsuario" required>
+
+  <label>Observación:</label>
+  <input type="text" [(ngModel)]="turno.observacion" name="observacion">
+
+  <button type="submit">Guardar Turno</button>
+</form>
